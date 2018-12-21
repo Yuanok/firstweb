@@ -34,6 +34,7 @@
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                             退出登录</a>
+                            <a href="{{route('user_addresses.index')}}">收货地址</a>
                             <form action="{{route('logout')}}" id="logout-form" method="post" style="display:none;">
                                 {{csrf_field()}}
                             </form>
