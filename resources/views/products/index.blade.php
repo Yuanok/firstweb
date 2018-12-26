@@ -54,5 +54,8 @@
             $('.search-form input[name=search]').val(filters.search);
             $('.search-form select[name=order]').val(filters.order);
         })
+        $('.search-form select[name=order]').on('change',function () {
+            $('.search-form').submit();
+        })
     </script>
 @endsection
