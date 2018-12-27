@@ -35,6 +35,7 @@
                                 document.getElementById('logout-form').submit();">
                             退出登录</a>
                             <a href="{{route('user_addresses.index')}}">收货地址</a>
+                            <a href="{{route('products.favorites')}}">我的收藏</a>
                             <form action="{{route('logout')}}" id="logout-form" method="post" style="display:none;">
                                 {{csrf_field()}}
                             </form>

@@ -83,7 +83,10 @@
                     },function (error) {//请求失败会执行这个回调
                         //如果返回码401是代表没登
                         if(error.response && error.response.status ===401){
-                            swal('请先登录','error');
+                            swal('请先登录','','error')
+                                .then(function () {
+                                    location.href='{{route('login')}}';
+                                });
                         }else if(error.response && error.response.data.msg){
                             //其他有msg字段的情况，将msg提示给用户
                             swal(error.response.data.msg,'','error');
