@@ -17,7 +17,7 @@ class ProductSku extends Model
         return $this->belongsTo(Product::class);
     }
 
-    //减库存
+
     public function decreaseStock($amount)
     {
         if ($amount < 0) {

@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Models\ProductSku;
-use Illuminate\Foundation\Http\FormRequest;
+//use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
 class OrderRequest extends Request
@@ -13,10 +13,10 @@ class OrderRequest extends Request
      *
      * @return bool
      */
-    public function authorize()
-    {
-        return true;
-    }
+//    public function authorize()
+//    {
+//        return true;
+//    }
 
     /**
      * Get the validation rules that apply to the request.

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Exceptions\InvalidRequestException;
-use Illuminate\Http\Request;
+use App\Jobs\CloseOrder;
+
 use App\Http\Requests\OrderRequest;
 use App\Models\ProductSku;
 use App\Models\UserAddress;
