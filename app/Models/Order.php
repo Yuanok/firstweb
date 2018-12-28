@@ -76,6 +76,17 @@ class Order extends Model
     });
     }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function items()
+    {
+        return $this->hasMany(OrderItem::class);
+    }
+
+
     public static function findAvailableNo(){
         // 订单流水号前缀
         $prefix = date('YmdHis');
