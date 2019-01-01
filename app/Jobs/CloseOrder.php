@@ -16,24 +16,12 @@ class CloseOrder implements ShouldQueue
 
     protected $order;
 
-    /**
-     * Create a new job instance.
-     *
-     * @return void
-     */
-    public function __construct(Order $order,$delay)
+    public function __construct(Order $order, $delay)
     {
-        //
-        $this->order=$order;
+        $this->order = $order;
         // 设置延迟的时间，delay() 方法的参数代表多少秒之后执行
         $this->delay($delay);
     }
-
-    /**
-     * Execute the job.
-     *
-     * @return void
-     */
 
     // 定义这个任务类具体的执行逻辑
     // 当队列处理器从队列中取出任务时，会调用 handle() 方法

@@ -61,7 +61,9 @@ class OrderService
 
             return $order;
         });
-
+        // 这里我们直接使用 dispatch 函数
+//        dispatch(new CloseOrder($order, config('app.order_ttl')));
         return $order;
     }
+
 }

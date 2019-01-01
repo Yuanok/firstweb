@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'order_ttl' =>10,
+    'order_ttl' => 10,
 
     'faker_locale' =>'zh_CN',
     /*

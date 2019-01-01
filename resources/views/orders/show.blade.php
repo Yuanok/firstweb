@@ -67,6 +67,11 @@
                                     @endif
                                 </div>
                             </div>
+                            <!-- 支付按钮开始 -->
+                            <div class="payment-buttons">
+                                <a href="{{route('payment.alipay',['order'=> $order->id])}}" class="btn btn-primary btn-sm">支付宝支付</a>
+                            </div>
+                            <!-- 支付按钮结束 -->
                         </div>
                     </div>
                 </div>

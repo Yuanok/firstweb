@@ -31,6 +31,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('alipay',function (){
             $config = config('pay.alipay');
             // 判断当前项目运行环境是否为线上环境
+            $config['notify_url'] = 'http://requestbin.fullcontact.com/q6zrufq7';
+            $config['return_url'] = route('payment.alipay.return');
             if(app()->environment()!== 'production'){
                 $config['mode']   ='dev';
                 $config['log']['level'] = Logger::DEBUG;
