@@ -7,6 +7,7 @@ use Illuminate\Validation\Rule;
 
 class SendReviewRequest extends Request
 {
+    public $name;
     public function rules()
     {
         return [
